@@ -32,7 +32,8 @@ lib_fixups: lib_fixups_user_type = {
 
 blob_fixups: blob_fixups_user_type = {
     'system/lib64/libgui-xiaomi.so': blob_fixup()
-        .fix_soname(),
+        .fix_soname()
+        .replace_needed('android.hardware.graphics.common-V5-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
     (
         'system/lib64/libcamera_algoup_jni.xiaomi.so',
         'system/lib64/libcamera_mianode_jni.xiaomi.so',
