@@ -25,6 +25,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/scanner-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/scanner-hiddenapi-package-whitelist.xml \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-scanner.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-scanner.xml
 
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.miui.ui.version.name=V202
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
